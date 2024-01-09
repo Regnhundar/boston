@@ -103,7 +103,10 @@ while (playerTwo) {
     playerTwo = false;
 }
 console.log(`----------------------------`)
-if (playerOneScore > playerTwoScore) {
+if (playerOneScore === playerTwoScore) {
+    console.log(`Oavgjort! ${playerOneScore} mot ${playerTwoScore}.`)
+}
+else if (playerOneScore > playerTwoScore) {
     console.log(`Spelare 1 vann! ${playerOneScore} mot ${playerTwoScore}.`)
 }
 else {
